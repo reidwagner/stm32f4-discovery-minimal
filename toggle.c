@@ -30,7 +30,7 @@ int main(void) {
         if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
             if (!button_pressed) {
                 button_pressed = 1;
-	            GPIO_ToggleBits(GPIOG, GPIO_Pin_n);
+                GPIO_ToggleBits(GPIOG, GPIO_Pin_n);
             }
         } else {
             button_pressed = 0;
